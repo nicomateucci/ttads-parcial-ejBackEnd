@@ -14,7 +14,14 @@ router.get('/', (req, res, next) => {
     return res.json(heroes)
 });
 
-router.get('/:id', (req, res, next) => {
+router.get('/:name/abilities', (req, res, next) => {
+  let name = req.params.name
+  heroes.heroes.forEach(myHero => {
+      if(myHero.HeroName === name) {
+        return res.json(myHero.abilities);
+      } 
+    } 
+  );
 });
 
 module.exports=router;
