@@ -15,6 +15,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/:id', (req, res, next) => {
+    return res.json({error:"not implemented yet. we need mongo"});
 });
 
 module.exports=router;
