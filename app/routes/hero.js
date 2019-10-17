@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var router=require('express').Router();
-var Heroe = require('../models/heroe')
+var Heroe = require('../models/heroe');
 // const heroes = {
 //   'heroes': [
 //     {'HeroName':'Deku','Name':'Midoriya Izuku','abilities':['super strength','super speed','power acumulation']},
