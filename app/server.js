@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
 
-mongoose.connect('mongodb://localhost/vet');
+mongoose.connect('mongodb://localhost/heroes');
 
 app.use(require('./routes'));
 
